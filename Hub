@@ -464,6 +464,6 @@ Tabs.Main5:AddButton({
     Title="Pupsik/Любимчик",
     Description="TikTok @brokenspawn1020",
     Callback=function()
-      print("zuzyavklane")
+      print("brokenspawn1020")
   end
 })
