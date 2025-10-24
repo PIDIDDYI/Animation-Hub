@@ -454,7 +454,15 @@ Tabs.Main5:AddButton({
 
 Tabs.Main5:AddButton({
     Title="My Friend",
-    Description=" TikTok @zuzyavklane",
+    Description="TikTok @zuzyavklane",
+    Callback=function()
+      print("zuzyavklane")
+  end
+})
+
+Tabs.Main5:AddButton({
+    Title="Pupsik/Любимчик",
+    Description="TikTok @brokenspawn1020",
     Callback=function()
       print("zuzyavklane")
   end
