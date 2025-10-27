@@ -1,3 +1,11 @@
+-- Notification
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Animation Hub",
+    Text = "Loading...",
+    Icon = "rbxassetid://109007998705186",
+    Duration = 15
+})
+
 local ScreenGui = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
@@ -17,7 +25,7 @@ UICorner.CornerRadius = UDim.new(1, 10)
 UICorner.Parent = ImageButton
 
 ImageButton.MouseButton1Down:Connect(function()
-    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.LeftControl, false, game)
 end)
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
@@ -29,7 +37,7 @@ local Window = Fluent:CreateWindow({
     Size = UDim2.fromOffset(450, 300),
     Acrylic = true,
     Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.End
+    MinimizeKey = Enum.KeyCode.LeftControl
 })
 local Tabs = {
         Main1=Window:AddTab({ Title="Reanimation" }),
