@@ -43,8 +43,9 @@ local Tabs = {
         Main1=Window:AddTab({ Title="Reanimation" }),
         Main2=Window:AddTab({ Title="Animations" }),
         Main3=Window:AddTab({ Title="Anim & Reanim" }),
-        Main4=Window:AddTab({ Title="Keyboard script" }),
-        Main5=Window:AddTab({ Title="Info" }),
+        Main4=Window:AddTab({ Title="R15 Animations" }),
+        Main5=Window:AddTab({ Title="Keyboard script" }),
+        Main6=Window:AddTab({ Title="Info" }),
 }
     Tabs.Main1:AddButton({
     Title="Giant Fix Cut Parts",
@@ -488,6 +489,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxinStud10/24-Hours
 })
 
 Tabs.Main4:AddButton({
+    Title="Sonic EXE",
+    Description="Discord ENJBafSA",
+    Callback=function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-R15-Sonic-exe-63788"))()
+end
+})
+
+Tabs.Main5:AddButton({
     Title="Keyboard Crack Version",
     Description="",
     Callback=function()
@@ -495,7 +504,7 @@ Tabs.Main4:AddButton({
   end
 })
 
-Tabs.Main5:AddButton({
+Tabs.Main6:AddButton({
     Title="Author",
     Description="TikTok @mercir.28",
     Callback=function()
@@ -503,7 +512,7 @@ Tabs.Main5:AddButton({
   end
 })
 
-Tabs.Main5:AddButton({
+Tabs.Main6:AddButton({
     Title="My Friend",
     Description="TikTok @zuzyavklane",
     Callback=function()
@@ -511,7 +520,7 @@ Tabs.Main5:AddButton({
   end
 })
 
-Tabs.Main5:AddButton({
+Tabs.Main6:AddButton({
     Title="Pupsik/Любимчик",
     Description="TikTok @brokenspawn1020",
     Callback=function()
